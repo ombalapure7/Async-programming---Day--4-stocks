@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StockX</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand">StockX</a>
+        <form class="d-flex">
+          <input class="form-control me-2" id="companyName" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" id="searchButton" onclick="getStocks(event)">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">Hi there, welcome to StockX!</h1>
+        <p class="lead">You can view the open, high, low and open price for a company</p>
+        <p class="lead">Enter the company code in the Search bar and click on the Search button</p>
+        <hr class="my-4">
+        <p>Eg: For Google enter GOOGL, for Microsoft enter MSF and for Apple enter AAPL</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" role="button" onclick="clearScreen()">Clear Screen</a>
+        </p>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="item item-1"></div>
+        <div class="item item-2"></div>
+        <div class="item item-3"></div>
+        <div class="item item-4"></div>
+        <div class="item item-5"></div>
+        <div class="item item-6"></div>
+        <div class="item item-7"></div>
+        <div class="item item-8"></div>
+        <div class="item item-9"></div>
+      </div>
+    </div>
+  </body>
+</html>
